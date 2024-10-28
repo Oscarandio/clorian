@@ -23,7 +23,7 @@ export const AddTickets = () => {
         aria-expanded='false'>
         {buttonText}
       </button>
-      <ul className='dropdown-menu' aria-labelledby='dropdownMenuButton'>
+      <ul className='dropdown-menu w-100' aria-labelledby='dropdownMenuButton'>
         {[...Array(maxEntries)].map((_, index) => {
           const entryCount = index + 1;
           const entryText =
@@ -32,7 +32,7 @@ export const AddTickets = () => {
               : `${entryCount} entradas`;
           return (
             <li
-              className='dropdown-item'
+              className='dropdown-item text-end'
               key={entryCount}
               onClick={() => handleTicketSelect(entryCount)}>
               {entryText}
