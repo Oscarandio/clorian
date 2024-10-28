@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "General",
+    "description": "Vive una experiencia inolvidable en el templo de la luz, obra de Antoni Gaudí y patrimonio de la humanidad.",
+    "date": "24/10/2024",
+    "price": 25.99,
+    "details": "Más detalles sobre el producto 1."
+  },
+  {
+    "id": 2,
+    "name": "Visita guiada",
+    "description": "Descubre esta obra maestra de la arquitectura diseñada por Antoni Gaudí en tu visita con uno de nuestros guías expertos.",
+    "date": "24/10/2024",
+    "price": 29.99,
+    "details": "Más detalles sobre el producto 2."
+
+  },
+    {
+    "id": 3,
+    "name": "Sagrada Familia con torre",
+    "description": "Descubre la belleza de la Sagrada Familia, obra del arquitecto Antoni Gaudí, mientras te adentras en una experiencia incomparable.",
+    "date": "24/10/2024",
+    "price": 35.99,
+    "details": "Más detalles sobre el producto 3."
+  },
+      {
+    "id": 4,
+    "name": "Todo incluído",
+    "description": "Descubre y comprende la belleza de cada detalle de la Sagrada Familia, obra del arquitecto Antoni Gaudí. Disfruta de una vista privilegiada de Barcelona desde una de las torres de la Basílica. ",
+    "date": "24/10/2024",
+    "price": 39.99,
+    "details": "Más detalles sobre el producto 3."
+  }
+]
