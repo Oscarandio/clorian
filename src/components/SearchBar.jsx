@@ -1,6 +1,6 @@
 export const SearchBar = ({ searchTerm, setSearchTerm }) => {
   return (
-    <div className='mb-4'>
+    <div>
       <input
         type='text'
         className='form-control'

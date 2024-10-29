@@ -33,56 +33,57 @@ const App = () => {
 
   return (
     <div className='container my-5'>
-      <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <header className='my-4'>
-        <h2>Catálogo de Productos</h2>
+        <h2>Catálogo de Tickets</h2>
       </header>
       <div className='row'>
-        <div className='col-12 col-lg-5 '>
+        <div className='col-12 col-xl-8'>
+          <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+        </div>
+        <div className='col-12 col-xl-4'>
           <SortSelector sortOrder={sortOrder} onSortChange={handleSortChange} />
         </div>
       </div>
       <div className='row product-container'>
-        <aside className='col-12 col-lg-5 overflow-y-scroll h-100'>
+        <aside className='col-12'>
           {filteredProducts.map((product) => (
-            <ProductCard
-              key={product.id}
-              name={product.name}
-              description={product.description}
-              onClick={() => handleSelectProduct(product)}
-            />
+            <div key={product.id}>
+              {/* Tarjeta del producto */}
+              <ProductCard
+                name={product.name}
+                description={product.description}
+                onClick={() => handleSelectProduct(product)}
+              />
+
+              {/* Detalles del producto debajo de la tarjeta si está seleccionado */}
+              {selectedProduct && selectedProduct.id === product.id && (
+                <section className='col-12 mt-3'>
+                  <div className='mb-4'>
+                    <img
+                      className='card-img-top rounded'
+                      src={selectedProduct.img}
+                      alt={selectedProduct.name}
+                    />
+                  </div>
+                  <h3>{selectedProduct.name}</h3>
+                  <p>{selectedProduct.description}</p>
+                  <div className='d-flex gap-3 align-items-center justify-content-between'>
+                    <div>
+                      <span className='price'>{selectedProduct.price}€</span>
+                      <p className='fst-italic'>
+                        Entradas para el día: {selectedProduct.date}
+                      </p>
+                    </div>
+                    <div className='d-flex align-items-center gap-3'>
+                      <AddTickets />
+                      <AddToCart />
+                    </div>
+                  </div>
+                </section>
+              )}
+            </div>
           ))}
         </aside>
-
-        <section className='col-12 col-lg-7 px-4'>
-          {selectedProduct ? (
-            <div>
-              <div className='mb-4'>
-                <img
-                  className='card-img-top rounded'
-                  src={selectedProduct.img}
-                  alt={selectedProduct.name}></img>
-              </div>
-              <h3>{selectedProduct.name}</h3>
-              <p>{selectedProduct.description}</p>
-              <div className='d-flex gap-3 align-items-center justify-content-between'>
-                <div>
-                  <span className='price'>{selectedProduct.price}€</span>
-                  <p className='fst-italic'>
-                    Entradas para el día: {selectedProduct.date}
-                  </p>
-                </div>
-
-                <div className='d-flex align-items-center gap-3'>
-                  <AddTickets />
-                  <AddToCart />
-                </div>
-              </div>
-            </div>
-          ) : (
-            <p>Selecciona un producto para ver más información</p>
-          )}
-        </section>
       </div>
     </div>
   );
