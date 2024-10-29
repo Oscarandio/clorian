@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
-import products from './assets/products.json';
-import { ProductCard } from './components/ProductCard';
+import { useState } from 'react';
 import { SearchBar } from './components/SearchBar';
 import { SortSelector } from './components/SortSelector';
+import products from './assets/products.json';
+import { ProductCard } from './components/ProductCard';
+import { AddTickets } from './components/AddTickets';
+import { AddToCart } from './components/AddToCart';
 
 const App = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -47,8 +49,6 @@ const App = () => {
               key={product.id}
               name={product.name}
               description={product.description}
-              date={product.date}
-              price={product.price}
               onClick={() => handleSelectProduct(product)}
             />
           ))}
@@ -57,9 +57,27 @@ const App = () => {
         <section className='col-12 col-lg-7 px-4'>
           {selectedProduct ? (
             <div>
+              <div className='mb-4'>
+                <img
+                  className='card-img-top rounded'
+                  src={selectedProduct.img}
+                  alt={selectedProduct.name}></img>
+              </div>
               <h3>{selectedProduct.name}</h3>
               <p>{selectedProduct.description}</p>
-              <p>{selectedProduct.details}</p>
+              <div className='d-flex gap-3 align-items-center justify-content-between'>
+                <div>
+                  <span className='price'>{selectedProduct.price}€</span>
+                  <p className='fst-italic'>
+                    Entradas para el día: {selectedProduct.date}
+                  </p>
+                </div>
+
+                <div className='d-flex align-items-center gap-3'>
+                  <AddTickets />
+                  <AddToCart />
+                </div>
+              </div>
             </div>
           ) : (
             <p>Selecciona un producto para ver más información</p>

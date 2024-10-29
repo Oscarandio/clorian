@@ -5,7 +5,7 @@
     "description": "Vive una experiencia inolvidable en el templo de la luz, obra de Antoni Gaudí y patrimonio de la humanidad.",
     "date": "24/10/2024",
     "price": 25.99,
-    "details": "Más detalles sobre el producto 1."
+    "img": "/sagrada.webp"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "description": "Siente el esplendor arquitectónico de la Barcelona de 1900s, en pleno Passeig de Gràcia y rodeado de recuerdos de una época memorable.",
     "date": "24/10/2024",
     "price": 28.99,
-    "details": "Más detalles sobre el producto 2."
+    "img": "/batllo.webp"
 
   },
     {
@@ -22,7 +22,7 @@
     "description": "Visita La Pedrera y entrarás en el mundo de Antoni Gaudí. Descubrirás en primera persona cómo la naturaleza es el origen y la inspiración del edificio.",
     "date": "24/10/2024",
     "price": 27.99,
-    "details": "Más detalles sobre el producto 3."
+    "img": "/pedrera.webp"
   },
       {
     "id": 4,
@@ -30,7 +30,7 @@
     "description": "La entrada permite visitar la zona donde se encuentran las obras más significativas de Antoni Gaudí declaradas Patrimonio de la Humanidad por la UNESCO, las zonas verdes y poder disfrutar de las vistas panorámicas de la ciudad de Barcelona.",
     "date": "24/10/2024",
     "price": 9.99,
-    "details": "Más detalles sobre el producto 3."
+    "img": "/guell.webp"
   },
     {
     "id": 5,
@@ -38,7 +38,7 @@
     "description": "Visita libre en el Palau de la Música Catalana con el soporte de un folleto explicativo.",
     "date": "24/10/2024",
     "price": 17.99,
-    "details": "Más detalles sobre el producto 3."
+    "img": "/palau.webp"
   },
     {
     "id": 6,
@@ -46,7 +46,7 @@
     "description": "El Parque de atracciones Tibidabo ofrece una experiencia inolvidable con más de 30 atracciones, espectáculos y actividades. Y todo esto, con las mejores vistas a la ciudad de Barcelona.",
     "date": "24/10/2024",
     "price": 34.99,
-    "details": "Más detalles sobre el producto 3."
+    "img": "/tibidabo.webp"
   },
     {
     "id": 7,
@@ -54,6 +54,6 @@
     "description": "Adéntrate en el nuevo Museo 100% interactivo donde podrás viajar por el pasado, presente y futuro del Barça a través de momentos históricos, jugadores y jugadoras de leyenda y triunfos que forman parte del imaginario colectivo.",
     "date": "24/10/2024",
     "price": 34.99,
-    "details": "Más detalles sobre el producto 3."
+    "img": "/campnou.webp"
   }
 ]

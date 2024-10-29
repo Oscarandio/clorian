@@ -1,10 +1,30 @@
+body {
+  color: #4a4a4a;
+}
 .product-container {
   height: 75vh;
 }
-
 .cursor-pointer {
   cursor: pointer;
 }
+.card {
+  color: #4a4a4a;
+}
 .card:hover {
-  border: 1px solid #000000;
+  border: 1px solid #dc0526;
+}
+.btn {
+  border-radius: 4px;
+  padding-block: 10px;
+  padding-inline: 12px;
+}
+.card-img-top {
+  max-height: 400px;
+}
+.price {
+  font-size: 24px;
+  font-weight: 500;
+}
+.fa-shopping-cart {
+  font-size: 16px;
 }

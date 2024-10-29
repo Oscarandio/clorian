@@ -16,7 +16,7 @@ export const AddTickets = () => {
   return (
     <div className='dropdown'>
       <button
-        className='btn btn-success dropdown-toggle'
+        className='btn btn-danger dropdown-toggle'
         type='button'
         id='dropdownMenuButton'
         data-bs-toggle='dropdown'
