@@ -1,11 +1,15 @@
+// AddTickets.jsx
 import { useState } from 'react';
 
-export const AddTickets = () => {
+export const AddTickets = ({ onSelectQuantity }) => {
   const maxEntries = 5;
   const [selectedTickets, setSelectedTickets] = useState(0);
 
   const handleTicketSelect = (count) => {
     setSelectedTickets(count);
+    if (onSelectQuantity) {
+      onSelectQuantity(count); // Actualiza el estado en el componente principal o Redux
+    }
   };
 
   const buttonText =
