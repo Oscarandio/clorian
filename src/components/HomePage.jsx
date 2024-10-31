@@ -80,6 +80,7 @@ export const HomePage = () => {
                         productId={selectedProduct.id}
                         quantity={selectedQuantity}
                         productName={selectedProduct.name}
+                        productPrice={selectedProduct.price}
                       />
                     </div>
                   </div>
