@@ -4,7 +4,7 @@ import { addItemToCart } from '../redux/cartSlice';
 import { toast } from 'react-toastify';
 import { useTranslation } from 'react-i18next';
 
-export const AddToCart = ({
+const AddToCart = ({
   productId,
   quantity,
   productPrice,
@@ -64,3 +64,5 @@ export const AddToCart = ({
     </button>
   );
 };
+
+export default AddToCart;

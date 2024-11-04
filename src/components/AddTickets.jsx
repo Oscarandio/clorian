@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-export const AddTickets = ({ onSelectQuantity, disabled }) => {
+const AddTickets = ({ onSelectQuantity, disabled }) => {
   const maxEntries = 5; // Maximum number of tickets that can be selected
   const [selectedTickets, setSelectedTickets] = useState(0); // State to keep track of the selected number of tickets
 
@@ -58,3 +58,5 @@ export const AddTickets = ({ onSelectQuantity, disabled }) => {
     </div>
   );
 };
+
+export default AddTickets;

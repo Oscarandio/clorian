@@ -1,4 +1,4 @@
-export const SortSelector = ({ sortOrder, onSortChange }) => {
+const SortSelector = ({ sortOrder, onSortChange }) => {
   return (
     <div className='mb-3'>
       <select
@@ -14,3 +14,5 @@ export const SortSelector = ({ sortOrder, onSortChange }) => {
     </div>
   );
 };
+
+export default SortSelector;

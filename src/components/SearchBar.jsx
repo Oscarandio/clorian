@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 
-export const SearchBar = ({ searchTerm, setSearchTerm }) => {
+const SearchBar = ({ searchTerm, setSearchTerm }) => {
   const { t } = useTranslation();
 
   return (
@@ -15,3 +15,5 @@ export const SearchBar = ({ searchTerm, setSearchTerm }) => {
     </div>
   );
 };
+
+export default SearchBar;

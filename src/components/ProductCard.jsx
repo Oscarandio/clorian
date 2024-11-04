@@ -1,4 +1,4 @@
-export const ProductCard = ({ name, description, onClick }) => {
+const ProductCard = ({ name, description, onClick }) => {
   return (
     <div className='card cursor-pointer mb-3' onClick={onClick}>
       <div className='card-body'>
@@ -8,3 +8,5 @@ export const ProductCard = ({ name, description, onClick }) => {
     </div>
   );
 };
+
+export default ProductCard;

@@ -4,6 +4,7 @@ import { removeItemFromCart, clearCart } from '../redux/cartSlice';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { toast } from 'react-toastify';
 import { useTranslation } from 'react-i18next';
+import CartItem from './CartItem'; // Importa el componente CartItem
 
 export const CartSummary = () => {
   const dispatch = useDispatch();
@@ -34,38 +35,17 @@ export const CartSummary = () => {
 
   return (
     <div className='container my-4'>
-      <h2>{t('resumen_carrito')}</h2>{' '}
+      <h2>{t('resumen_carrito')}</h2>
       {items.length > 0 ? ( // Check if there are items in the cart
         <div className='list-group my-3'>
           {items.map((item) => (
-            <div
-              key={item.id}
-              className='list-group-item d-flex justify-content-between align-items-center py-2'>
-              <div>
-                <h5>{t(`${item.name}.name`)}</h5>{' '}
-                <p>
-                  {t('precio_entrada')}: {item.price.toFixed(2)}€ <br />{' '}
-                  {t('cantidad')}: {item.quantity}{' '}
-                </p>
-              </div>
-              <div className='text-end'>
-                <p className='fw-bold'>
-                  {t('subtotal')}: {(item.price * item.quantity).toFixed(2)}€{' '}
-                  {/* Calculate and display subtotal */}
-                </p>
-                <button
-                  className='btn btn-outline-danger btn-sm mb-2'
-                  onClick={() => handleRemoveItem(item.id)}>
-                  {t('eliminar_producto')}{' '}
-                </button>
-              </div>
-            </div>
+            <CartItem key={item.id} item={item} onRemove={handleRemoveItem} />
           ))}
           <div className='list-group-item d-flex justify-content-between align-items-center mt-3'>
             <h4>{t('total_general')}:</h4> <h4>{totalGeneral}€</h4>
           </div>
           <button className='btn btn-danger mt-3' onClick={handleClearCart}>
-            {t('vaciar_carrito')}{' '}
+            {t('vaciar_carrito')}
           </button>
         </div>
       ) : (
