@@ -12,6 +12,7 @@
 "añadir": "Add to Cart",
 "añadida": "Added",
 "añadidas": "Added",
+"exceso_entradas": "It's not allowed to add more than 10 tickets",
 "resumen_carrito": "Cart Summary",
 "precio_entrada": "Price per ticket",
 "cantidad": "Quantity",
@@ -44,7 +45,7 @@
     "name": "Tibidabo",
     "description": "Tibidabo Amusement Park offers an unforgettable experience with over 30 attractions, shows, and activities, all with the best views of Barcelona."
   },
-  "camp_nou": {
+  "spotify": {
     "name": "Spotify Camp Nou Museum",
     "description": "Dive into the new 100% interactive museum, where you can travel through the past, present, and future of Barça, featuring historical moments, legendary players, and triumphs that form part of the collective imagination."
   }

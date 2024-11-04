@@ -12,6 +12,7 @@
 "añadir": "Añadir al carrito",
 "añadida": "Añadida",
 "añadidas": "Añadidas",
+"exceso_entradas": "No se pueden añadir mas de 10 entradas",
 "resumen_carrito": "Resumen del Carrito",
 "precio_entrada": "Precio por entrada",
 "cantidad": "Cantidad",
@@ -44,7 +45,7 @@
     "name": "Tibidabo",
     "description": "El Parque de atracciones Tibidabo ofrece una experiencia inolvidable con más de 30 atracciones, espectáculos y actividades. Y todo esto, con las mejores vistas a la ciudad de Barcelona."
   },
-  "camp_nou": {
+  "spotify": {
     "name": "Spotify Camp Nou Museo",
     "description": "Adéntrate en el nuevo Museo 100% interactivo donde podrás viajar por el pasado, presente y futuro del Barça a través de momentos históricos, jugadores y jugadoras de leyenda y triunfos que forman parte del imaginario colectivo."
   }

@@ -6,8 +6,10 @@ export const SortSelector = ({ sortOrder, onSortChange }) => {
         className='form-select'
         value={sortOrder}
         onChange={(e) => onSortChange(e.target.value)}>
-        <option value='asc'>A - Z</option>
-        <option value='desc'>Z - A</option>
+        <option value='asc'>A - Z (Nombre)</option>
+        <option value='desc'>Z - A (Nombre)</option>
+        <option value='asc-description'>A - Z (Descripción)</option>
+        <option value='desc-description'>Z - A (Descripción)</option>
       </select>
     </div>
   );

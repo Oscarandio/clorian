@@ -10,10 +10,19 @@ const cartSlice = createSlice({
     addItemToCart: (state, action) => {
       const { id, name, price, quantity } = action.payload;
       const existingItem = state.items.find((item) => item.id === id);
-      if (existingItem) {
-        existingItem.quantity += quantity;
+
+      const totalQuantity = existingItem
+        ? existingItem.quantity + quantity
+        : quantity;
+
+      if (totalQuantity <= 10) {
+        if (existingItem) {
+          existingItem.quantity += quantity; 
+        } else {
+          state.items.push({ id, name, price, quantity }); 
+        }
       } else {
-        state.items.push({ id, name, price, quantity });
+        console.warn(`No se pueden añadir más de 10 entradas de ${name}.`);
       }
     },
     removeItemFromCart: (state, action) => {
