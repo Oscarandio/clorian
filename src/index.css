@@ -15,10 +15,11 @@ body {
 }
 .btn {
   border-radius: 4px;
-  padding-block: 10px;
-  padding-inline: 12px;
+  padding: 10px;
+  min-width: 200px;
 }
 .card-img-top {
+  object-fit: cover;
   max-height: 400px;
 }
 .price {

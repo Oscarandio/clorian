@@ -11,7 +11,7 @@
     "id": 2,
     "name": "Casa Batlló",
     "description": "Siente el esplendor arquitectónico de la Barcelona de 1900s, en pleno Passeig de Gràcia y rodeado de recuerdos de una época memorable.",
-    "date": "24/10/2024",
+    "date": "15/11/2024",
     "price": 28.99,
     "img": "/batllo.webp"
 
@@ -20,7 +20,7 @@
     "id": 3,
     "name": "La Pedrera",
     "description": "Visita La Pedrera y entrarás en el mundo de Antoni Gaudí. Descubrirás en primera persona cómo la naturaleza es el origen y la inspiración del edificio.",
-    "date": "24/10/2024",
+    "date": "17/11/2024",
     "price": 27.99,
     "img": "/pedrera.webp"
   },
@@ -28,7 +28,7 @@
     "id": 4,
     "name": "Park Güell",
     "description": "La entrada permite visitar la zona donde se encuentran las obras más significativas de Antoni Gaudí declaradas Patrimonio de la Humanidad por la UNESCO, las zonas verdes y poder disfrutar de las vistas panorámicas de la ciudad de Barcelona.",
-    "date": "24/10/2024",
+    "date": "18/11/2024",
     "price": 9.99,
     "img": "/guell.webp"
   },
@@ -36,7 +36,7 @@
     "id": 5,
     "name": "Palau de la Música Catalana",
     "description": "Visita libre en el Palau de la Música Catalana con el soporte de un folleto explicativo.",
-    "date": "24/10/2024",
+    "date": "29/10/2024",
     "price": 17.99,
     "img": "/palau.webp"
   },
@@ -44,7 +44,7 @@
     "id": 6,
     "name": "Tibidabo",
     "description": "El Parque de atracciones Tibidabo ofrece una experiencia inolvidable con más de 30 atracciones, espectáculos y actividades. Y todo esto, con las mejores vistas a la ciudad de Barcelona.",
-    "date": "24/10/2024",
+    "date": "20/11/2024",
     "price": 34.99,
     "img": "/tibidabo.webp"
   },
@@ -52,7 +52,7 @@
     "id": 7,
     "name": "Spotify Camp Nou Museo",
     "description": "Adéntrate en el nuevo Museo 100% interactivo donde podrás viajar por el pasado, presente y futuro del Barça a través de momentos históricos, jugadores y jugadoras de leyenda y triunfos que forman parte del imaginario colectivo.",
-    "date": "24/10/2024",
+    "date": "22/11/2024",
     "price": 34.99,
     "img": "/campnou.webp"
   }

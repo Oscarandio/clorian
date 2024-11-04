@@ -1,7 +1,7 @@
 // AddTickets.jsx
 import { useState } from 'react';
 
-export const AddTickets = ({ onSelectQuantity }) => {
+export const AddTickets = ({ onSelectQuantity, disabled }) => {
   const maxEntries = 5;
   const [selectedTickets, setSelectedTickets] = useState(0);
 
@@ -20,7 +20,7 @@ export const AddTickets = ({ onSelectQuantity }) => {
   return (
     <div className='dropdown'>
       <button
-        className='btn btn-danger dropdown-toggle'
+        className='btn btn-danger dropdown-toggle d-flex justify-content-around align-items-center'
         type='button'
         id='dropdownMenuButton'
         data-bs-toggle='dropdown'
@@ -36,9 +36,11 @@ export const AddTickets = ({ onSelectQuantity }) => {
               : `${entryCount} entradas`;
           return (
             <li
-              className='dropdown-item text-end'
+              className={`dropdown-item text-end ${disabled ? 'disabled' : ''}`}
+              disabled={disabled}
               key={entryCount}
-              onClick={() => handleTicketSelect(entryCount)}>
+              onClick={() => handleTicketSelect(entryCount)}
+            >
               {entryText}
             </li>
           );
