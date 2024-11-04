@@ -1,4 +1,3 @@
-// CartSummary.jsx
 import { useSelector, useDispatch } from 'react-redux';
 import { removeItemFromCart, clearCart } from '../redux/cartSlice';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -10,12 +9,20 @@ export const CartSummary = () => {
   const dispatch = useDispatch();
   const items = useSelector((state) => state.cart.items);
 
-  // Calculate the total price of all items in the cart, formatted to two decimals
-  const totalGeneral = items
-    .reduce((acc, item) => acc + item.price * item.quantity, 0)
-    .toFixed(2);
+  console.log('Items en el carrito:', items); // Verifica el contenido del carrito
 
-  // Function to handle removing an item from the cart
+  // Calcular el precio total de todos los artículos en el carrito, formateado a dos decimales
+  const totalGeneral =
+    items.length > 0
+      ? items
+          .reduce(
+            (acc, item) => acc + (item.price || 0) * (item.quantity || 0),
+            0
+          )
+          .toFixed(2)
+      : '0.00'; // Valor por defecto si no hay elementos
+
+  // Función para manejar la eliminación de un artículo del carrito
   const handleRemoveItem = (id) => {
     dispatch(removeItemFromCart(id));
     toast.success('Producto eliminado', {
@@ -23,7 +30,7 @@ export const CartSummary = () => {
     });
   };
 
-  // Function to handle clearing the entire cart
+  // Función para manejar el vaciado del carrito
   const handleClearCart = () => {
     dispatch(clearCart());
     toast.success('Carrito vaciado', {
@@ -36,7 +43,7 @@ export const CartSummary = () => {
   return (
     <div className='container my-4'>
       <h2>{t('resumen_carrito')}</h2>
-      {items.length > 0 ? ( // Check if there are items in the cart
+      {items.length > 0 ? ( // Verifica si hay elementos en el carrito
         <div className='list-group my-3'>
           {items.map((item) => (
             <CartItem key={item.id} item={item} onRemove={handleRemoveItem} />
