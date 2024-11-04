@@ -1,0 +1,51 @@
+{
+  "menu": {
+    "inicio": "Inicio",
+    "carrito": "Ver Carrito"
+  },
+"catalogo": "Catálogo de Tickets",
+"buscar": "Buscar entradas",
+"entradas_dia": "Entradas para el día",
+"seleccionar_entradas": "Seleccionar entradas",
+"entrada": "entrada",
+"entradas": "entradas",
+"añadir": "Añadir al carrito",
+"añadida": "Añadida",
+"añadidas": "Añadidas",
+"resumen_carrito": "Resumen del Carrito",
+"precio_entrada": "Precio por entrada",
+"cantidad": "Cantidad",
+"subtotal": "Subtotal",
+"eliminar_producto": "Eliminar producto",
+"total_general": "Total General",
+"vaciar_carrito": "Vaciar carrito",
+"carrito_vacio": "El carrito está vacío",
+ "sagrada_familia": {
+    "name": "Sagrada Família",
+    "description": "Vive una experiencia inolvidable en el templo de la luz, obra de Antoni Gaudí y patrimonio de la humanidad."
+  },
+  "casa_batllo": {
+    "name": "Casa Batlló",
+    "description": "Siente el esplendor arquitectónico de la Barcelona de 1900s, en pleno Passeig de Gràcia y rodeado de recuerdos de una época memorable."
+  },
+  "la_pedrera": {
+    "name": "La Pedrera",
+    "description": "Visita La Pedrera y entrarás en el mundo de Antoni Gaudí. Descubrirás en primera persona cómo la naturaleza es el origen y la inspiración del edificio."
+  },
+  "park_guell": {
+    "name": "Park Güell",
+    "description": "La entrada permite visitar la zona donde se encuentran las obras más significativas de Antoni Gaudí declaradas Patrimonio de la Humanidad por la UNESCO, las zonas verdes y poder disfrutar de las vistas panorámicas de la ciudad de Barcelona."
+  },
+  "palau_musica": {
+    "name": "Palau de la Música Catalana",
+    "description": "Visita libre en el Palau de la Música Catalana con el soporte de un folleto explicativo."
+  },
+  "tibidabo": {
+    "name": "Tibidabo",
+    "description": "El Parque de atracciones Tibidabo ofrece una experiencia inolvidable con más de 30 atracciones, espectáculos y actividades. Y todo esto, con las mejores vistas a la ciudad de Barcelona."
+  },
+  "camp_nou": {
+    "name": "Spotify Camp Nou Museo",
+    "description": "Adéntrate en el nuevo Museo 100% interactivo donde podrás viajar por el pasado, presente y futuro del Barça a través de momentos históricos, jugadores y jugadoras de leyenda y triunfos que forman parte del imaginario colectivo."
+  }
+}

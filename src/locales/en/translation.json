@@ -1,0 +1,51 @@
+{
+  "menu": {
+    "inicio": "Home",
+    "carrito": "Go to Cart"
+  },
+"catalogo": "View Cart",
+"buscar": "Search tickets",
+"entradas_dia": "Tickets for the day",
+"seleccionar_entradas": "Select tickets",
+"entrada": "ticket",
+"entradas": "tickets",
+"añadir": "Add to Cart",
+"añadida": "Added",
+"añadidas": "Added",
+"resumen_carrito": "Cart Summary",
+"precio_entrada": "Price per ticket",
+"cantidad": "Quantity",
+"subtotal": "Subtotal",
+"eliminar_producto": "Delete product",
+"total_general": "Total",
+"vaciar_carrito": "Empty cart",
+"carrito_vacio": "The cart is empty",
+ "sagrada_familia": {
+    "name": "Sagrada Família",
+    "description": "Experience an unforgettable visit to the temple of light, the work of Antoni Gaudí and a UNESCO World Heritage site."
+  },
+  "casa_batllo": {
+    "name": "Batlló House",
+    "description": "Feel the architectural splendor of early 20th-century Barcelona on Passeig de Gràcia, surrounded by memories of a remarkable era."
+  },
+  "la_pedrera": {
+    "name": "La Pedrera",
+    "description": "Visit La Pedrera and enter the world of Antoni Gaudí. Discover firsthand how nature is the origin and inspiration for the building."
+  },
+  "park_guell": {
+    "name": "Park Güell",
+    "description": "The ticket allows access to the area where the most significant works of Antoni Gaudí, declared a UNESCO World Heritage site, are located, as well as green areas and panoramic views of Barcelona."
+  },
+  "palau_musica": {
+    "name": "Palace of Catalan Music",
+    "description": "Enjoy a self-guided visit to the Palace of Catalan Music with an explanatory brochure."
+  },
+  "tibidabo": {
+    "name": "Tibidabo",
+    "description": "Tibidabo Amusement Park offers an unforgettable experience with over 30 attractions, shows, and activities, all with the best views of Barcelona."
+  },
+  "camp_nou": {
+    "name": "Spotify Camp Nou Museum",
+    "description": "Dive into the new 100% interactive museum, where you can travel through the past, present, and future of Barça, featuring historical moments, legendary players, and triumphs that form part of the collective imagination."
+  }
+}

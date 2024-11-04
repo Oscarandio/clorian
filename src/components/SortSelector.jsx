@@ -1,9 +1,6 @@
 export const SortSelector = ({ sortOrder, onSortChange }) => {
   return (
     <div className='mb-3'>
-      {/* <label htmlFor='sortOrder' className='form-label'>
-        Ordenar por:
-      </label> */}
       <select
         id='sortOrder'
         className='form-select'
